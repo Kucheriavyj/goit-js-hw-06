@@ -9,7 +9,7 @@ const mainSpanEl = document.querySelector('.color');
 mainChangeColor.addEventListener('click', onChangeColor);
 
 function onChangeColor() {
-  mainBodyEl.style.backgroundColor = getRandomHexColor();
-  mainSpanEl.textContent = getRandomHexColor();
-  //mainSpanEl.replaceChildren(getRandomHexColor(toString));
-}
+  const mainColor = getRandomHexColor();
+  mainBodyEl.style.backgroundColor = mainColor;
+  mainSpanEl.textContent = mainColor;
+};
