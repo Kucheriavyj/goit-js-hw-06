@@ -9,9 +9,13 @@ function onMainSubmit(event) {
   } = event.currentTarget;
 
   if (email.value === "" || password.value === "") {
-    alert("Вы заполнили не все поля формы!");
+     return alert("Ви заповнили не всі поля форми!");
   }
 
-  console.log(`Email: ${email.value}, Password: ${password.value}`);
+      const formData = {
+        email: email.value,
+        password: password.value,
+    };
+  console.log(formData);
   event.currentTarget.reset();
-}
+};
